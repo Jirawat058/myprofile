@@ -1,0 +1,46 @@
+            .width-20 {
+                width: 20%
+            }
+            
+            .width-30 {
+                width: 30%
+            }
+            
+            .width-35 {
+                width: 35%
+            }
+            
+            .width-40 {
+                width: 40%
+            }
+            
+            .width-50 {
+                width: 50%
+            }
+            
+            .width-80 {
+                width: 80%
+            }
+            
+            main {
+                float: right;
+            }
+            /* Medium devices (desktops, 992px and up) */
+            
+            @media (min-width: 992px) {
+                .main {
+                    float: left;
+                }
+            }
+            
+            .bgGreen {
+                background: #008B8B;
+            }
+            
+            .bgBlack {
+                background: #000
+            }
+            
+            .textGreen {
+                color: #008B8B
+            }

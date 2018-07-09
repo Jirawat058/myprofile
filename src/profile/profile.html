@@ -1,0 +1,354 @@
+<!--navbar-->
+<nav id="scrollpage" class="navbar navbar-expand-lg navbar-dark bgGreen fixed-top ">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+        <div class="container">
+            <div class="row justify-content-md-center mx-1 ">
+
+                <ul class="nav nav-tabs border-bottom-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#home" aria-selected="true">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#about" aria-selected="false">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#experience" aria-selected="false">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#education" aria-selected="false">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#skills" aria-selected="false">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#activity" aria-selected="false">Activity</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#contact" aria-selected="false">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" [routerLink]="[ '/login'] " aria-selected="false">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div data-spy="scroll" data-target="#myTab" data-offset="0">
+
+
+
+
+    <!--Home-->
+    <div id="home" class="pt-5 w-100">
+        <div class="container pt-3">
+            <div class="card bg-dark text-white bg-dark h-100">
+                <img src='{{picCover}}' alt="Card image">
+                <div class="card-img-overlay text-center  ">
+                    <h3 class="card-title font-italic font-weight-bold">{{message}}</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--About-->
+    <div id="about" class="pt-5 pb-5">
+        <div class="container ">
+            <div class="row justify-content-center mx-1">
+                <h1 class="font-weight-light textGreen">About Me</h1>
+            </div>
+
+            <hr class="featurette-divider border-bottom bg-warning shadow">
+
+            <div class="row ">
+                <div class="col-md-8 pt-5 pl-5">
+                    <div class="">
+                        <div><label class="width-30">ชื่อ:</label> <label class="width-100">{{name}}</label> </div>
+                        <div><label class="width-30">ชื่อเล่น:</label><label class="width-100">{{nickName}}</label></div>
+                        <div><label class="width-30">อายุ:</label><label class="width-100">{{age}}</label></div>
+                        <div><label class="width-30">ชั้นปีที่:</label><label class="width-100">{{years}}</label> </div>
+                        <div><label class="width-30">สาขา:</label><label class="width-100">{{major}}</label> </div>
+                        <div><label class="width-30">คณะ:</label> <label class="width-100">{{faculty}}</label></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="pl-0">
+                        <img src='{{imgMe}}' alt="me" class="img-thumbnail">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Experience-->
+    <div id="experience" class="pt-5 pb-5 bgBlack">
+        <div class="container">
+            <div class="row justify-content-center mx-1">
+                <h1 class="font-weight-light textGreen">Experience</h1>
+
+            </div>
+
+            <hr class="featurette-divider border-bottom bg-warning shadow ">
+
+            <div class="row pt-4">
+
+                <div class="col-md-6 border-right">
+
+                    <h4 class="text-right text-light ">{{yearEx1}}</h4>
+                </div>
+
+                <div class="col-md-6">
+                    <h4 class="text-warning">{{institution1}}</h4>
+                    <p class="text-light">{{description1}}</p>
+                </div>
+            </div>
+
+            <hr class="d-md-none featurette-divider border-bottom bg-warning shadow ">
+
+            <div class="row pt-4">
+
+                <div class="col-md-6 order-md-2 right ">
+                    <h4 class="text-light">{{yearEx2}}</h4>
+                </div>
+                <div class="col-md-6 order-md-1 border-right">
+
+                    <h4 class="text-warning text-right">{{institution2}}</h4>
+                    <p class="text-light text-right">{{description2}}</p>
+                </div>
+            </div>
+
+            <hr class="d-md-none featurette-divider border-bottom bg-warning shadow ">
+
+            <div class="row pt-4">
+                <div class="col-md-6 border-right">
+                    <h4 class="text-right text-light ">{{yearEx3}}</h4>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="text-warning">{{institution3}}</h4>
+                    <p class="text-light">{{description3}}</p>
+                </div>
+            </div>
+
+            <hr class=" d-md-none featurette-divider border-bottom bg-warning shadow  ">
+
+            <div class="row pt-4">
+                <div class="col-md-6 order-md-2 right ">
+                    <h4 class="text-light">{{yearEx4}}</h4>
+                </div>
+                <div class="col-md-6 order-md-1 border-right">
+
+                    <h4 class="text-warning text-right">{{institution4}}</h4>
+                    <p class="text-light text-right">{{description4}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--Education-->
+
+    <div id="education" class="pt-5 pb-5">
+        <div class="container ">
+            <div class="row justify-content-center mx-1">
+                <h1 class="font-weight-light textGreen">Education</h1>
+
+            </div>
+
+            <hr class=" featurette-divider border-bottom bg-warning shadow">
+
+
+            <div class="row pt-4">
+                <div class="col-md-6 border-right ">
+                    <h4 class="text-right textGreen">{{yearEd1}}</h4>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="text-warning">{{education1}}</h4>
+                    <p> {{descriptionEd1}}</p>
+                </div>
+            </div>
+
+            <hr class="d-md-none featurette-divider border-bottom bg-warning shadow ">
+
+            <div class="row pt-4">
+                <div class="col-md-6 order-md-2 right ">
+                    <h4 class="textGreen">{{yearEd2}}</h4>
+
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <h4 class="text-warning text-right">{{education2}}</h4>
+                    <p class="text-right"> {{descriptionEd2}}</p>
+                </div>
+            </div>
+
+            <hr class="d-md-none featurette-divider border-bottom bg-warning shadow ">
+
+            <div class="row pt-4">
+                <div class="col-md-6 border-right ">
+                    <h4 class="text-right textGreen">{{yearEd3}}</h4>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="text-warning">{{education3}}</h4>
+                    <p>{{descriptionEd3}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--Skills-->
+
+    <div id="skills" class="pt-5 pb-5 bgBlack">
+        <div class="container ">
+            <div class="row justify-content-center mx-1">
+                <h1 class="font-weight-light textGreen">Skills</h1>
+
+            </div>
+
+            <hr class="featurette-divider border-bottom bg-warning shadow">
+
+            <div class="row pt-2">
+                <div class="col-md-6 border-right">
+                    <p class="text-light font-weight-light pt-2">{{skill1}}</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+                    </div>
+
+                    <p class="text-light font-weight-light pt-2">{{skill2}}</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
+                    </div>
+
+                    <p class="text-light font-weight-light pt-2">{{skill3}}</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%"></div>
+                    </div>
+
+                    <p class="text-light font-weight-light pt-2">{{skill4}}</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+                    </div>
+
+
+                </div>
+                <div class="col-md-6">
+                    <p class="text-light font-weight-light pt-2">{{skill5}}</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+                    </div>
+
+                    <p class="text-light font-weight-light pt-2">{{skill6}}</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width: 35%"></div>
+                    </div>
+
+                    <p class="text-light font-weight-light pt-2">{{skill7}}</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--Activity-->
+
+    <div id="activity" class="pt-5 pb-5">
+        <div class="container ">
+            <div class="row justify-content-center mx-1">
+                <h1 class="font-weight-light textGreen">Activity</h1>
+            </div>
+            <hr class="featurette-divider border-bottom bg-warning shadow">
+
+            <div class="row pt-4">
+                <div class="col-md-4">
+                    <div class="card img-thumbnail">
+                        <img class="card-img-top" src='{{picAct1}}' alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">{{descriptionAct1}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card img-thumbnail">
+                        <img class="card-img-top" src='{{picAct2}}' alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">{{descriptionAct2}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card img-thumbnail">
+                        <img class="card-img-top" src='{{picAct3}}' alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">{{descriptionAct3}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card img-thumbnail">
+                        <img class="card-img-top" src='{{picAct4}}' alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">{{descriptionAct4}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card img-thumbnail">
+                        <img class="card-img-top" src='{{picAct5}}' alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">{{descriptionAct5}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card img-thumbnail">
+                        <img class="card-img-top" src='{{picAct6}}' alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">{{descriptionAct6}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--Contact-->
+
+    <div id="contact" class="pt-5 pb-5 bgBlack">
+        <div class="container ">
+            <div class="row justify-content-center mx-1">
+                <h1 class="font-weight-light textGreen">Contact</h1>
+
+            </div>
+
+            <hr class="featurette-divider border-bottom bg-warning shadow ">
+
+            <div class="row pt-4">
+                <div class="col-md-6 border-right">
+                    <p class="text-right text-light">{{address}}</p>
+                </div>
+                <div class="col-md-6">
+                    <p class="text-light">{{phone}} <br>{{email}}</p>
+                </div>
+            </div>
+            <div class="row pt-4 justify-content-center mx-1">
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.338178140434!2d100.57669283797891!3d13.802054491643514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xae85aba798181cbd!2z4LmA4LiV4Li04Lih4LmA4LiV4LmH4Lih4LmA4Liu4LmJ4Liy4Liq4LmM!5e1!3m2!1sth!2sth!4v1530676645883"
+                    frameborder="0" style="border:0; height: 100%; width: 80% " allowfullscreen></iframe>
+                <!-- <div id="map" style="height: 20em"></div> -->
+            </div>
+        </div>
+    </div>
+</div>

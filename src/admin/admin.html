@@ -1,0 +1,23 @@
+<span id="bg"></span>
+<div class="text-center bg-light">
+    <nav class="navbar navbar-light bg-info">
+        <a class="navbar-brand">ADMIN</a>
+
+        <button type="submit" class="btn btn-outline-light my-2 my-sm-0" type="submit" (submit)="logout()" [routerLink]="['/login']">Logout </button>
+
+    </nav>
+    <div class="container">
+        <div class="row ">
+            <div class="col-6">
+                <dt for="name">Name</dt>
+            </div>
+            <div class="col-2">
+                <dt for="link">Link</dt>
+            </div>
+            <div class="col-1">
+                <dt for="link">Delete</dt>
+            </div>
+        </div>
+    </div>
+    <app-userlist></app-userlist>
+</div>

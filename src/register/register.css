@@ -1,0 +1,66 @@
+.register-form {
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-top: 5%;
+    margin-left: 10%;
+    transform: translate3d(0%, 0, 0);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 80%;
+    z-index: 5;
+    position: -ms-page;
+    background: #f3f3f3;
+    border-radius: 12px;
+}
+
+button {
+    /* padding: 1.1ex 2.5ex;
+    font-family: 'Bree Serif', serif;
+    color: #fff;
+    text-shadow: 0px 1px 0 rgba(0, 0, 0, 0.25);
+    background: #56c2e1;
+    border: 1px solid #46b3d3;
+    border-radius: 5px;
+    cursor: pointer; */
+    font-family: Poppins-Medium;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    width: 40%;
+    height: 50px;
+    background-color: #57b846;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);
+    -moz-box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);
+    -webkit-box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);
+    -o-box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);
+    -ms-box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    outline: none !important;
+    border: none;
+}
+
+.alert-login {
+    color: red;
+}
+
+#bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../assets/img/bg1.jpeg) no-repeat center center fixed;
+    background-size: cover;
+    -webkit-filter: blur(5px);
+}

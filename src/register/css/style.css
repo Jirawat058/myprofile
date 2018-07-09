@@ -1,0 +1,24 @@
+#navbarBg {
+    background: #008B8B;
+}
+
+#about,
+.about {
+    padding-top: 6em 0;
+}
+
+.right-10 {
+    margin-right: 10px;
+}
+
+.width-30 {
+    width: 80px;
+}
+
+.width-100 {
+    width: 200px;
+}
+
+.map-hight {
+    height: 20em;
+}
